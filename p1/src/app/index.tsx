@@ -10,7 +10,7 @@ export default function Index() {
       <Text style={styles.subtitulo}> Bem vindo ao nosso APP!!!</Text>
       <TouchableOpacity
         style={styles.botao}
-        onPress={() => router.push("/detalhes")}>
+        onPress={() => router.push("/Detalhes")}>
 
         <Text style={styles.textoBotao}>detalhes</Text>
 
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
 
   },
   textoBotao:{
-    
+
   }
 
 });
