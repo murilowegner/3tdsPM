@@ -10,9 +10,16 @@ export default function Index() {
       <Text style={styles.subtitulo}> Bem vindo ao nosso APP!!!</Text>
       <TouchableOpacity
         style={styles.botao}
-        onPress={() => router.push("/detalhes")}>
+        onPress={() => router.back()}>
 
-        <Text style={styles.textoBotao}>detalhes</Text>
+        <Text style={styles.textoBotao}>voltar</Text>
+
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.botao}
+        onPress={() => router.push("/")}>
+
+        <Text style={styles.textoBotao}>ir para tela inicial</Text>
 
       </TouchableOpacity>
     </View>
@@ -26,16 +33,16 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   titulo: {
-    alignItems: "center"
+    alignItems: "center",
   },
   subtitulo: {
-    alignItems: "baseline"
+    
   },
   botao:{
 
   },
   textoBotao:{
-    
+
   }
 
 });
