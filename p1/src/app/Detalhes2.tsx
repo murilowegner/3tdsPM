@@ -1,21 +1,19 @@
 import { useRouter } from "expo-router";
 import { StyleSheet, Text, TouchableOpacity, View, Image } from "react-native";
-export default function Detalhes() {
+export default function Detalhes2() {
   const router = useRouter();
-  const imageReact = require("../../assets/images/android-icon-foreground.png");
   return (
     <View style={styles.container}>
       {/* <Text style={styles.title}>Tela de detalhes</Text>
       <Text style={styles.subtitle}>
         Aqui você aprendeu a navegar para outra tela usando uma pilha de navegação.
       </Text> */}
-      <TouchableOpacity style={styles.button} onPress={() => router.push("./Detalhes2")}>
-        <Text style={styles.buttonText}>Detalhes 2</Text>
+      <TouchableOpacity style={styles.button} onPress={() => router.back()}>
+        <Text style={styles.buttonText}>Voltar</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.linkButton} onPress={() => router.push("/")}>
         <Text style={styles.linkText}>Ir para a tela inicial</Text>
       </TouchableOpacity>
-      <Image source={imageReact} style={styles.image} />
     </View>
   );
 }
