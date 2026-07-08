@@ -14,13 +14,15 @@ export default function Index() {
       </view>
 
       <view style={styles.centerflex}>
+        <h1> Tela principal</h1>
+        <text> Essa é a tela principal</text>
         <TouchableOpacity style={styles.button} onPress={() => router.push("/Detalhes")}>
         <Text style={styles.buttonText}>Ir para a próxima tela</Text>
       </TouchableOpacity>
       </view>
 
       <view style={styles.margemlateral}>
-        <text>teste2</text>
+        
       </view>
 
 
